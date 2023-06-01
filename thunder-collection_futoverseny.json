@@ -1,0 +1,157 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "futoverseny",
+    "dateExported": "2023-03-23T12:58:53.295Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "ae88ecac-3889-4673-9a8d-e3c2e9e745ce",
+            "colId": "e6c81c27-dd82-4fa1-a74b-ceaa4a5c9915",
+            "containerId": "",
+            "name": "GetAllRunners",
+            "url": "http://127.0.0.1:8000/api/versenyzok/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-03-23T08:08:24.473Z",
+            "modified": "2023-03-23T08:08:46.678Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "276c1e37-bfe1-4562-9093-5a464b163440",
+            "colId": "e6c81c27-dd82-4fa1-a74b-ceaa4a5c9915",
+            "containerId": "",
+            "name": "GetRunnerByRajtszam",
+            "url": "http://127.0.0.1:8000/api/versenyzok/2338",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-03-23T08:16:12.332Z",
+            "modified": "2023-03-23T12:52:06.231Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1e0e04a4-e2f5-4ce0-8845-9fc727cfdba2",
+            "colId": "e6c81c27-dd82-4fa1-a74b-ceaa4a5c9915",
+            "containerId": "",
+            "name": "RegisterRunner",
+            "url": "http://127.0.0.1:8000/api/jelentkezes/",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-03-23T09:00:43.799Z",
+            "modified": "2023-03-23T12:53:30.557Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"rajtszam\": 577777,\n    \"nev\": \"Valaki Valakijevicsnéné\",\n    \"nem\": \"nő\",\n    \"tavokId\": 3\n  }",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "7|ok8eZ2wcToZfPBgtrm2HjAmfkq3uFgujvZe91Jkr"
+            },
+            "tests": []
+        },
+        {
+            "_id": "612bdf4b-217e-4ffb-a8cc-5321797b7d6a",
+            "colId": "e6c81c27-dd82-4fa1-a74b-ceaa4a5c9915",
+            "containerId": "",
+            "name": "RegisterUser",
+            "url": "http://127.0.0.1:8000/api/regisztracio/",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-03-23T09:36:24.390Z",
+            "modified": "2023-03-23T12:52:51.081Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "  {\n    \"name\": \"valaki3\",\n    \"email\": \"example3@gmail.com\",\n    \"password\": \"asdasdasd\"\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1bd4bc0f-aea5-448f-a670-ef3a38380baf",
+            "colId": "e6c81c27-dd82-4fa1-a74b-ceaa4a5c9915",
+            "containerId": "",
+            "name": "LoginUser",
+            "url": "http://127.0.0.1:8000/api/bejelentkezes/",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-03-23T11:30:08.202Z",
+            "modified": "2023-03-23T12:53:04.941Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "  {\n    \"email\": \"example3@gmail.com\",\n    \"password\": \"asdasdasd\"\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3b5cd9d1-7238-4e4c-ad09-748d8c05c572",
+            "colId": "e6c81c27-dd82-4fa1-a74b-ceaa4a5c9915",
+            "containerId": "",
+            "name": "EditRunnerData",
+            "url": "http://127.0.0.1:8000/api/versenyzok/105",
+            "method": "PATCH",
+            "sortNum": 70000,
+            "created": "2023-03-23T11:53:53.434Z",
+            "modified": "2023-03-23T12:54:03.812Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"rajtszam\": 677777,\n    \"nev\": \"Valaki Valki\",\n    \"nem\": \"férfi\",\n    \"tavokId\": 1\n  }",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "7|ok8eZ2wcToZfPBgtrm2HjAmfkq3uFgujvZe91Jkr"
+            },
+            "tests": []
+        },
+        {
+            "_id": "980e8ce9-4878-4d26-9724-93b6532a9526",
+            "colId": "e6c81c27-dd82-4fa1-a74b-ceaa4a5c9915",
+            "containerId": "",
+            "name": "DeleteRunnerData",
+            "url": "http://127.0.0.1:8000/api/versenyzok/105",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2023-03-23T11:54:26.544Z",
+            "modified": "2023-03-23T12:54:18.779Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "7|ok8eZ2wcToZfPBgtrm2HjAmfkq3uFgujvZe91Jkr"
+            },
+            "tests": []
+        },
+        {
+            "_id": "024c3071-bd0e-474f-8460-966952d05335",
+            "colId": "e6c81c27-dd82-4fa1-a74b-ceaa4a5c9915",
+            "containerId": "",
+            "name": "Logout",
+            "url": "http://127.0.0.1:8000/api/logout/",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2023-03-23T11:56:25.065Z",
+            "modified": "2023-03-23T12:54:31.400Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "7|ok8eZ2wcToZfPBgtrm2HjAmfkq3uFgujvZe91Jkr"
+            },
+            "tests": []
+        }
+    ]
+}
